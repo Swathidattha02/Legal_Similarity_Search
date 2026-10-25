@@ -1,0 +1,26 @@
+{
+  "name": "ai-legal-case-similarity-platform",
+  "version": "1.0.0",
+  "description": "AI Legal Case Similarity and Intelligent Legal Research Platform for Indian Court Judgments",
+  "private": true,
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File .\\start-all.ps1",
+    "dev:frontend": "npm --prefix frontend run dev",
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:ai": "powershell -Command \"cd backend/ai-service; .\\venv\\Scripts\\activate; uvicorn main:app --reload --port 8000\"",
+    "build:frontend": "npm --prefix frontend run build",
+    "seed": "powershell -Command \"cd backend/ai-service; .\\venv\\Scripts\\python seed_cases.py\""
+  },
+  "keywords": [
+    "legal-research",
+    "nlp",
+    "inlegalbert",
+    "chromadb",
+    "rag",
+    "react",
+    "express",
+    "fastapi"
+  ],
+  "author": "",
+  "license": "ISC"
+}

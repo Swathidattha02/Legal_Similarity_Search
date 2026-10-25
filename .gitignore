@@ -1,0 +1,97 @@
+# ──────────────────────────────────────────────
+# Environment variables — NEVER commit real secrets
+# ──────────────────────────────────────────────
+.env
+.env.local
+.env.development
+.env.production
+
+# ──────────────────────────────────────────────
+# Node.js / npm
+# ──────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnp
+.pnp.js
+
+# ──────────────────────────────────────────────
+# Frontend build output
+# ──────────────────────────────────────────────
+frontend/dist/
+frontend/.vite/
+
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.Python
+
+# Virtual environments
+backend/ai-service/venv/
+backend/ai-service/.venv/
+venv/
+.venv/
+env/
+
+# ──────────────────────────────────────────────
+# ChromaDB persistent data
+# ──────────────────────────────────────────────
+backend/ai-service/chroma_data/
+chroma_data/
+
+# ──────────────────────────────────────────────
+# Uploaded documents (user files — not versioned)
+# ──────────────────────────────────────────────
+backend/uploads/
+
+# ──────────────────────────────────────────────
+# Logs
+# ──────────────────────────────────────────────
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# ──────────────────────────────────────────────
+# OS artifacts
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────
+# IDE / editor
+# ──────────────────────────────────────────────
+.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# ──────────────────────────────────────────────
+# Testing coverage
+# ──────────────────────────────────────────────
+coverage/
+.nyc_output/
+htmlcov/
+.pytest_cache/
+
+# ──────────────────────────────────────────────
+# Misc
+# ──────────────────────────────────────────────
+*.tgz
+*.zip

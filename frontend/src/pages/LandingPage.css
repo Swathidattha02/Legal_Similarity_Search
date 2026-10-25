@@ -1,0 +1,872 @@
+/* ==========================================================================
+   NyayaAI Landing Page - High-End Warm Minimalist Legal Intelligence Theme
+   Matches the Reference Design Meticulously
+   ========================================================================== */
+
+.nyaya-landing {
+  min-height: 100vh;
+  background-color: #FAF9F5;
+  color: #1E1A18;
+  font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   1. Navigation Bar
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(250, 249, 245, 0.94);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border-bottom: 1px solid #EFECE4;
+}
+
+.nyaya-header-container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Brand Group: Logo Badge + Title + Sub-badge */
+.nyaya-brand-group {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.nyaya-brand-link {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nyaya-logo-badge {
+  width: 36px;
+  height: 36px;
+  background: #12213D;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(18, 33, 61, 0.2);
+}
+
+.nyaya-logo-badge.small {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.nyaya-logo-icon {
+  font-size: 1.15rem;
+  color: #D4AF37;
+  line-height: 1;
+}
+
+.nyaya-brand-name {
+  font-size: 1.32rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: #1E1A18;
+}
+
+.nyaya-subbadge {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: #656056;
+  background: #ECE8DF;
+  border: 1px solid #DFD8CC;
+  border-radius: 6px;
+  padding: 4px 8px;
+  line-height: 1.2;
+}
+
+/* Nav Links */
+.nyaya-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nyaya-nav-link {
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #4F4B44;
+  text-decoration: none;
+  transition: color 0.15s ease;
+  position: relative;
+  padding: 6px 0;
+}
+
+.nyaya-nav-link:hover {
+  color: #1E1A18;
+}
+
+.nyaya-nav-link.active {
+  color: #1E1A18;
+  font-weight: 700;
+}
+
+/* Nav Action Buttons */
+.nyaya-nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.nyaya-nav-signin {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1E1A18;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: opacity 0.15s ease;
+}
+
+.nyaya-nav-signin:hover {
+  opacity: 0.75;
+}
+
+.nyaya-btn-dark {
+  background: #1E1A18;
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 10px 18px;
+  border-radius: 8px;
+  transition: background 0.15s ease, transform 0.15s ease;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.nyaya-btn-dark:hover {
+  background: #2C2623;
+  transform: translateY(-1px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   2. Hero Section (Exact Reference Layout)
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-hero {
+  padding: 56px 20px 84px;
+  text-align: center;
+  position: relative;
+  background-color: #FAF9F5;
+}
+
+.nyaya-hero-container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+/* Announcement Pill */
+.nyaya-announcement-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #F0EAE1;
+  border: 1px solid #E2D9CC;
+  border-radius: 9999px;
+  padding: 7px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6B655B;
+  text-transform: uppercase;
+  margin-bottom: 28px;
+}
+
+.nyaya-pill-icon {
+  font-size: 12px;
+  color: #927228;
+}
+
+/* Headline */
+.nyaya-hero-title {
+  font-size: clamp(38px, 5.2vw, 62px);
+  font-weight: 800;
+  line-height: 1.14;
+  letter-spacing: -0.038em;
+  color: #1E1A18;
+  margin: 0 auto 22px;
+  max-width: 820px;
+}
+
+/* Subtitle */
+.nyaya-hero-subtitle {
+  font-size: 1.05rem;
+  line-height: 1.68;
+  color: #555048;
+  max-width: 710px;
+  margin: 0 auto 34px;
+  font-weight: 400;
+}
+
+/* Hero CTA Buttons */
+.nyaya-hero-ctas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 44px;
+  flex-wrap: wrap;
+}
+
+.nyaya-cta-primary {
+  background: #1E1A18;
+  color: #FFFFFF;
+  border: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 13px 26px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  box-shadow: 0 4px 12px rgba(30, 26, 24, 0.15);
+}
+
+.nyaya-cta-primary:hover {
+  background: #2D2724;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(30, 26, 24, 0.2);
+}
+
+.nyaya-arrow {
+  font-size: 1.1rem;
+  transition: transform 0.15s ease;
+}
+
+.nyaya-cta-primary:hover .nyaya-arrow {
+  transform: translateX(3px);
+}
+
+.nyaya-cta-secondary {
+  background: #FFFFFF;
+  color: #24201D;
+  border: 1px solid #DCD6CA;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 13px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.nyaya-cta-secondary:hover {
+  background: #FAF8F3;
+  border-color: #CEC6B6;
+  transform: translateY(-1px);
+}
+
+.nyaya-cta-icon {
+  font-size: 1rem;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   3. The Floating Search Precedents Card (Core Reference Component)
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-search-card {
+  max-width: 830px;
+  margin: 0 auto;
+  background: #FFFFFF;
+  border: 1px solid #E8E4DA;
+  border-radius: 16px;
+  box-shadow:
+    0 16px 38px -12px rgba(33, 28, 26, 0.08),
+    0 4px 12px rgba(0, 0, 0, 0.02);
+  padding: 10px 12px 14px;
+  text-align: left;
+}
+
+.nyaya-search-input-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #FFFFFF;
+  padding: 4px;
+  border-radius: 12px;
+}
+
+/* Jurisdiction Dropdown Selector */
+.nyaya-jurisdiction-container {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.nyaya-jurisdiction-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #F7F5EE;
+  border: 1px solid #E6E1D4;
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #342F2B;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.nyaya-jurisdiction-btn:hover {
+  background: #F0EDE3;
+  border-color: #DCD4C4;
+}
+
+.nyaya-court-icon {
+  font-size: 0.95rem;
+}
+
+.nyaya-chevron {
+  font-size: 0.85rem;
+  color: #7A746B;
+}
+
+.nyaya-jurisdiction-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  background: #FFFFFF;
+  border: 1px solid #E4DFD4;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+  padding: 6px;
+  min-width: 240px;
+  z-index: 200;
+}
+
+.nyaya-jurisdiction-item {
+  width: 100%;
+  text-align: left;
+  padding: 8px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  color: #36322E;
+  cursor: pointer;
+  transition: background 0.12s ease;
+  font-family: inherit;
+}
+
+.nyaya-jurisdiction-item:hover {
+  background: #F4F1EA;
+}
+
+.nyaya-jurisdiction-item.selected {
+  font-weight: 700;
+  background: #ECE8DD;
+  color: #1E1A18;
+}
+
+/* Search Input Field */
+.nyaya-input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  padding: 0 8px;
+  min-width: 0;
+}
+
+.nyaya-input-icon {
+  font-size: 1rem;
+  color: #8C867C;
+  flex-shrink: 0;
+}
+
+.nyaya-search-input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 0.9rem;
+  color: #1E1A18;
+  font-weight: 500;
+  font-family: inherit;
+  padding: 8px 0;
+}
+
+.nyaya-search-input::placeholder {
+  color: #8A857D;
+  font-weight: 400;
+}
+
+/* Submit Search Button */
+.nyaya-search-submit-btn {
+  background: #1E1A18;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  flex-shrink: 0;
+}
+
+.nyaya-search-submit-btn:hover {
+  background: #2D2724;
+  transform: translateY(-1px);
+}
+
+.nyaya-submit-icon {
+  font-size: 0.95rem;
+  color: #D4AF37;
+}
+
+/* Suggested Queries Row */
+.nyaya-suggested-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding-top: 10px;
+  border-top: 1px solid #F3EFE7;
+  flex-wrap: wrap;
+}
+
+.nyaya-suggested-label {
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  color: #8A847C;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.nyaya-suggested-chips {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.nyaya-chip-btn {
+  background: #F1ECE2;
+  border: 1px solid #E6E0D5;
+  color: #4A453E;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  font-family: inherit;
+  white-space: nowrap;
+}
+
+.nyaya-chip-btn:hover {
+  background: #E5DFD2;
+  color: #1E1A18;
+  border-color: #D7CFBF;
+  transform: translateY(-1px);
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   4. Features Section
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-section {
+  padding: 84px 20px;
+  background-color: #FAF9F5;
+}
+
+.nyaya-section-alt {
+  background-color: #FFFFFF;
+}
+
+.nyaya-section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nyaya-section-header {
+  text-align: center;
+  max-width: 680px;
+  margin: 0 auto 52px;
+}
+
+.nyaya-section-badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #8A6D28;
+  background: #F7F1DF;
+  border: 1px solid #EADBBA;
+  border-radius: 6px;
+  padding: 4px 10px;
+  margin-bottom: 12px;
+}
+
+.nyaya-section-title {
+  font-size: clamp(26px, 3.2vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: #1E1A18;
+  margin: 0 0 14px;
+}
+
+.nyaya-section-desc {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: #635E56;
+  margin: 0;
+}
+
+.nyaya-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.nyaya-feature-card {
+  background: #FFFFFF;
+  border: 1px solid #ECE7DD;
+  border-radius: 14px;
+  padding: 28px 24px;
+  transition: all 0.2s ease;
+}
+
+.nyaya-feature-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.04);
+  border-color: #DED8CA;
+}
+
+.nyaya-feature-icon-box {
+  width: 48px;
+  height: 48px;
+  background: #FAF8F2;
+  border: 1px solid #ECE6D8;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: all 0.2s ease;
+}
+
+.nyaya-feature-card:hover .nyaya-feature-icon-box {
+  background: #FFFFFF;
+  border-color: #DFD7C4;
+  transform: scale(1.05);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+}
+
+.feature-svg-icon {
+  font-size: 1.45rem;
+  display: block;
+}
+
+.icon-scale { color: #B48222; }
+.icon-doc { color: #2B6CB0; }
+.icon-bolt { color: #D97706; }
+.icon-ai { color: #805AD5; }
+.icon-book { color: #2C7A7B; }
+.icon-bookmark { color: #E53E3E; }
+
+.nyaya-logo-icon-svg {
+  font-size: 1.25rem;
+  color: #D4AF37;
+  display: block;
+}
+
+.nyaya-logo-icon-svg.small {
+  font-size: 0.95rem;
+}
+
+.nyaya-pill-icon-svg {
+  font-size: 0.95rem;
+  color: #927228;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.nyaya-feature-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1E1A18;
+  margin: 0 0 8px;
+}
+
+.nyaya-feature-desc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #666158;
+  margin: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   5. How It Works Steps
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.nyaya-step-card {
+  background: #FAF9F5;
+  border: 1px solid #ECE8DF;
+  border-radius: 14px;
+  padding: 26px 20px;
+  text-align: center;
+}
+
+.nyaya-step-badge {
+  width: 42px;
+  height: 42px;
+  background: #1E1A18;
+  color: #D4AF37;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 800;
+  margin: 0 auto 16px;
+}
+
+.nyaya-step-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1E1A18;
+  margin: 0 0 8px;
+}
+
+.nyaya-step-desc {
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: #635E56;
+  margin: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   6. Case Law DB Grid
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-db-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.nyaya-db-card {
+  background: #FFFFFF;
+  border: 1px solid #ECE7DD;
+  border-radius: 12px;
+  padding: 22px 24px;
+}
+
+.nyaya-db-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #8C6A1E;
+  margin-bottom: 8px;
+  letter-spacing: 0.05em;
+}
+
+.nyaya-db-card h4 {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #1E1A18;
+  margin: 0 0 6px;
+}
+
+.nyaya-db-card p {
+  font-size: 0.86rem;
+  color: #635E56;
+  margin: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   7. About Box
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-about-box {
+  background: #FAF9F5;
+  border: 1px solid #ECE7DD;
+  border-radius: 18px;
+  padding: 44px 40px;
+}
+
+.nyaya-stats-row {
+  display: flex;
+  gap: 40px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.nyaya-stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.nyaya-stat-number {
+  font-size: 1.45rem;
+  font-weight: 800;
+  color: #1E1A18;
+  letter-spacing: -0.02em;
+}
+
+.nyaya-stat-label {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #6C665D;
+  margin-top: 4px;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   8. Pre-Footer Banner & Footer
+   ────────────────────────────────────────────────────────────────────────── */
+.nyaya-cta-banner {
+  background: #1E1A18;
+  color: #FFFFFF;
+  padding: 72px 20px;
+  text-align: center;
+}
+
+.nyaya-cta-heading {
+  font-size: clamp(24px, 3.5vw, 36px);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  margin: 0 0 14px;
+}
+
+.nyaya-cta-subtext {
+  font-size: 1rem;
+  color: #B5AEA4;
+  max-width: 600px;
+  margin: 0 auto 28px;
+}
+
+.nyaya-btn-dark-large {
+  background: #D4AF37;
+  color: #1E1A18;
+  text-decoration: none;
+  font-size: 0.96rem;
+  font-weight: 700;
+  padding: 14px 28px;
+  border-radius: 8px;
+  display: inline-block;
+  transition: all 0.15s ease;
+}
+
+.nyaya-btn-dark-large:hover {
+  background: #E5C352;
+  transform: translateY(-1px);
+}
+
+.nyaya-footer {
+  background: #FAF9F5;
+  border-top: 1px solid #EBE7DD;
+  padding: 36px 20px 28px;
+}
+
+.nyaya-footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nyaya-footer-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #EFEBE2;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.nyaya-footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nyaya-footer-note {
+  font-size: 0.85rem;
+  color: #7A746B;
+}
+
+.nyaya-footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.nyaya-footer-links a {
+  font-size: 0.85rem;
+  color: #555047;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nyaya-footer-links a:hover {
+  color: #1E1A18;
+}
+
+.nyaya-footer-bottom {
+  padding-top: 20px;
+  text-align: center;
+}
+
+.nyaya-footer-bottom p {
+  font-size: 0.78rem;
+  color: #8C867C;
+  margin: 0;
+}
+
+/* ──────────────────────────────────────────────────────────────────────────
+   9. Responsiveness
+   ────────────────────────────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .nyaya-nav-links { display: none; }
+  .nyaya-features-grid { grid-template-columns: repeat(2, 1fr); }
+  .nyaya-steps-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 720px) {
+  .nyaya-search-input-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .nyaya-jurisdiction-btn { width: 100%; justify-content: space-between; }
+  .nyaya-search-submit-btn { width: 100%; justify-content: center; }
+  .nyaya-features-grid { grid-template-columns: 1fr; }
+  .nyaya-steps-grid { grid-template-columns: 1fr; }
+  .nyaya-db-grid { grid-template-columns: 1fr; }
+  .nyaya-subbadge { display: none; }
+}
